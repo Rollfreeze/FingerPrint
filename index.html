@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FingerPrint</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="center-container">
+            <h1 class="title">WEB-Finger Print</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="center-container">
+            <div class="deanonymizing-container">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td colspan="2" class="table-row">
+                                <span class="table-col center">Deanonymizing parameters</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-row">
+                                <span class="table-col bold"><b>Your ID:</b></span>
+                            </td>
+
+                            <td class="table-row">
+                                <span class="table-col bold" id="idUser"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-row">
+                                <span class="table-col">IP addres (ipV4):</span>
+                            </td>
+
+                            <td class="table-row">
+                                <span class="table-col" id="ipV4"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-row">
+                                <span class="table-col">IP addres (ipV6):</span>
+                            </td>
+
+                            <td class="table-row">
+                                <span class="table-col" id="ipV6"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-row">
+                                <span class="table-col">ISP:</span>
+                            </td>
+
+                            <td class="table-row">
+                                <span class="table-col" id="isp"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-row">
+                                <span class="table-col">Continent name:</span>
+                            </td>
+
+                            <td class="table-row">
+                                <span class="table-col" id="continentName"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-row">
+                                <span class="table-col">Continent code:</span>
+                            </td>
+
+                            <td class="table-row">
+                                <span class="table-col" id="continentCode"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-row">
+                                <span class="table-col">Country</span>
+                            </td>
+
+                            <td class="table-row">
+                                <span class="table-col" id="country"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-row">
+                                <span class="table-col">Region</span>
+                            </td>
+
+                            <td class="table-row">
+                                <span class="table-col" id="region"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-row">
+                                <span class="table-col">City</span>
+                            </td>
+
+                            <td class="table-row">
+                                <span class="table-col" id="city"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-row">
+                                <span class="table-col">Timezone:</span>
+                            </td>
+
+                            <td class="table-row">
+                                <span class="table-col" id="timeZone"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-row">
+                                <span class="table-col">Coordinates:</span>
+                            </td>
+
+                            <td class="table-row">
+                                <span class="table-col" id="coordinates"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class="table-row">
+                                <span class="table-col center">Anonymizer using</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-row">
+                                <span class="table-col">Proxy/Vpn:</span>
+                            </td>
+
+                            <td class="table-row">
+                                <span class="table-col" id="Proxy"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-row">
+                                <span class="table-col">Tor:</span>
+                            </td>
+
+                            <td class="table-row">
+                                <span class="table-col" id="Tor"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- deanonymizing-container -->
+        </div> <!-- center-container -->
+    </main>
+
+    <footer class="footer">
+        <div class="center-container">
+            <!-- <span class="description">This is a training Finger Print site for work</span> -->
+            <span class="description">The idea of my site is that we always see your certain ID. Even if you decide to
+                change your browser, use PROXY/VPN/TOR or decide to get incognito</span>
+        </div>
+    </footer>
+
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+    <!-- api for getting data -->
+    <script src="JS/userDataShow.js"></script>
+
+    <!-- api for fingerprint and user identification -->
+    <script src="JS/fingerPrint.js"></script>
+</body>
+</html>
