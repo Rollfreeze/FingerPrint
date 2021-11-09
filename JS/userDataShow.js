@@ -40,7 +40,7 @@ $.getJSON('https://ipgeolocation.abstractapi.com/v1/?api_key=' + apiKey, functio
     const city = arrDataElements2.city;
     const timeZone = arrDataElements2.timezone.abbreviation;
     const coordinates = arrDataElements2.latitude + " " + arrDataElements2.longitude;
-    const vpn = arrDataElements2.security.is_vpn;
+    // const vpn = arrDataElements2.security.is_vpn;
 
     element = document.querySelector('#ipV4');
     element.innerHTML = ipV4;
@@ -57,8 +57,8 @@ $.getJSON('https://ipgeolocation.abstractapi.com/v1/?api_key=' + apiKey, functio
     element = document.querySelector('#coordinates');
     element.innerHTML = coordinates;
 
-    element = document.querySelector('#VPN');
-    element.innerHTML = vpn;
+    // element = document.querySelector('#VPN');
+    // element.innerHTML = vpn;
 });
 
 var request = new XMLHttpRequest();
